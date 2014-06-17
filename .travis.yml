@@ -59,6 +59,3 @@ script:
   - if [[ "$DB" == "postgres" ]]; then python geoalchemy/tests/test_postgis.py; fi
   - if [[ "$DB" == "mysql" ]]; then python geoalchemy/tests/test_mysql.py; fi
 
-notifications:
-  email:
-    on_failure: change
